@@ -1,0 +1,283 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051
+}
+
+.logo{
+    color: #fff;
+    font-size: 25px;
+    line-height: 60px;
+    padding-left: 250px;
+    float: left;
+}
+
+.menu{
+    float: left;
+    padding-left: 355px;
+}
+
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/pg.jpg)  center/cover no-repeat;
+}
+
+.title_container{
+    float: left;
+    margin: 300px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.title_container h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.title_container h4{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #79818d
+}
+
+.title_container input{
+    width: 96px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    margin: 50px 14px 0px 14px;
+}
+
+.about_me_container h2{
+    text-align: center;
+    border-bottom: 3px solid #d17700;
+    width: 96px;
+    font-size: 20px;
+    margin: 15px auto;
+    padding-bottom: 5px;
+}
+
+.about_me_container{
+    text-align: none;
+    width: 740px;
+    margin: 0px auto;
+}
+
+.about_me_container img{
+    display: block;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.about_me_container hr{
+    height: 10px;
+    border: none;
+    background: #d17700;
+    width: 10px;
+    margin: 0 auto;
+}
+
+.about_me_container p{
+    margin-top: 30px;
+} 
+
+.about_me_container .secondText{
+    margin-top: 15px;
+}
+
+.skills h2{
+    text-align: center;
+    border-bottom: 3px solid #d17700;
+    width: 100px;
+    font-size: 19px;
+    margin: 20px auto;
+    padding-bottom: 10px;
+}
+
+.skills{
+    width: 100%;
+    height: 25%;
+    background: url(../img/fon.png) no-repeat;
+}
+
+.skills_item{
+    float: left;
+    width: 230px;
+    text-align: center;
+    margin-left:130px;
+}
+
+.clear{
+    clear: left;
+}
+
+.cases{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.cases h2{
+    text-align: center;
+    border-bottom: 3px solid #d17700;
+    width: 96px;
+    font-size: 30px;
+    margin: 15px auto;
+    padding-bottom: 5px;
+}
+
+.cases1 h3{
+    font-size: 20px;
+    padding-left: 400px;
+    margin-top: 10px;
+}
+
+.cases1 p{
+    padding-left: 400px;
+}
+
+.submit{
+    margin-left: 400px;
+    margin-top: 20px;       
+}
+
+.cases2 h3{
+    margin-left: 800px;
+    
+}
+
+.calculator_container h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.selekt1{
+    display: block;
+    width: 850px;
+    height: 50px;
+    background: #eeeeee;
+}
+
+.selekt2{
+    display: block;
+    width: 850px;
+    height: 50px;
+    background: #eeeeee;
+    
+}
+
+.selekt3{
+    display: block;
+    width: 850px;
+    height: 50px;
+    background: #eeeeee;
+}
+
+.statistics_container h2{
+    border-bottom: 2px solid #d17700;
+    width: 96px;
+    font-size: 22px;
+    margin: 15px auto;
+    padding-bottom: 5px;
+    padding-top: 60px;
+}
+
+.statistics{
+    float: left;
+    width: 230px;
+    text-align: center;
+    margin-left:130px;
+    padding-top: 60px;
+}
+
+.allstatistics{
+    
+    width: 100%;
+    height: 50%;
+    background: url(../img/fon3.png) center/cover no-repeat;
+}
+
+.reviews h2{
+   border-bottom: 2px solid #d17700;
+    width: 96px;
+    font-size: 25px;
+    margin: 15px auto;
+    padding-bottom: 10px;
+    padding-top: 60px;    
+}
+
+
+
+.reviews{
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    background: url(../img/fon4.png) no-repeat;
+    text-align: center
+}
+.contact p{
+   color: #ffffff;
+    font-size: 15px;
+}
+
+.contact h2{
+    border-bottom: 2px solid #d17700;
+    width: 96px;
+    font-size: 30px;
+    margin: 15px auto;
+    padding-bottom: 10px;
+    padding-top: 60px;  
+    color: #ffffff  
+}
+
+.contact_item{
+    float: left;
+    width: 230px;
+    text-align: center;
+    margin-left:250px;
+    padding-top: 25px;
+}
+
+.contact p{
+    text-align: center;
+    margin: 30px;
+}
+
+.contact h3{
+    font-size: 30px;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.contacts_inputs{
+   margin: 20px
+}
+
+.text{
+    padding-top: 20px
+}
+
