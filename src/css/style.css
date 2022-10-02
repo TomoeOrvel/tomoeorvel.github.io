@@ -68,11 +68,24 @@ nav{
 
 .about_me_container h2{
     text-align: center;
-    border-bottom: 3px solid #d17700;
+    /*border-bottom: 3px solid #d17700;*/
     width: 96px;
     font-size: 20px;
     margin: 15px auto;
     padding-bottom: 5px;
+}
+
+.about_me_container{
+    text-align: center;
+}
+
+.about_me_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 0 auto;
+    
 }
 
 .about_me_container{
@@ -87,13 +100,6 @@ nav{
     padding: 40px;
 }
 
-.about_me_container hr{
-    height: 10px;
-    border: none;
-    background: #d17700;
-    width: 10px;
-    margin: 0 auto;
-}
 
 .about_me_container p{
     margin-top: 30px;
@@ -103,26 +109,45 @@ nav{
     margin-top: 15px;
 }
 
+.skills{
+    padding-top: 25px;
+}
+
 .skills h2{
     text-align: center;
-    border-bottom: 3px solid #d17700;
+   /* border-bottom: 3px solid #d17700;*/
     width: 100px;
-    font-size: 19px;
+    font-size: 25px;
     margin: 20px auto;
-    padding-bottom: 10px;
+}
+
+.skills hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 0 auto;
 }
 
 .skills{
     width: 100%;
-    height: 25%;
+    height: 50%;
     background: url(../img/fon.png) no-repeat;
+    margin-top: 50px;
 }
 
 .skills_item{
     float: left;
-    width: 230px;
+    width: 250px;
     text-align: center;
-    margin-left:130px;
+    margin-left:100px;
+    padding-top: 100px;
+}
+
+.skills_item h3{
+    color: #cf7600;
+    font-size: 25px;
+    padding: 20px 0px 10px 0px  
 }
 
 .clear{
@@ -131,113 +156,154 @@ nav{
 
 .cases{
     text-align: center;
-    margin-top: 20px;
+    
 }
 
-
-
 .cases h2{
-    text-align: center;
-    border-bottom: 3px solid #d17700;
-    width: 96px;
-    font-size: 30px;
-    margin: 15px auto;
-    padding-bottom: 5px;
+     text-align: center;
+   /* border-bottom: 3px solid #d17700;*/
+    width: 100px;
+    font-size: 22px;
+    margin: 10px auto;
+}
+
+.cases hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.cases p{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.cases1{
+   float: left;
+    width: 230px;
+    margin-left:200px;
 }
 
 .cases1 h3{
-    font-size: 20px;
-    padding-left: 400px;
-    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px 0px;
 }
 
-.cases1 p{
-    padding-left: 400px;
+.cases1 input{
+    padding: 10px 0px 0px 45px;
+    font-size: 15px;
 }
 
-.submit{
-    margin-left: 400px;
-    margin-top: 20px;       
+.cases2{
+    float: left;
+    width: 600px;
+    margin-left: 200px;
 }
 
-.cases2 h3{
-    margin-left: 800px;
-    
-}
-
-.calculator_container h2{
-    font-size: 30px;
+.calculator h2{
     text-align: center;
-    margin-top: 30px;
+   /* border-bottom: 4px solid #d17700;*/
+    width: 100px;
+    font-size: 22px;
+    margin: 10px auto;
 }
 
-.selekt1{
+.calculator hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.mySelekt{
     display: block;
     width: 850px;
     height: 50px;
     background: #eeeeee;
+    margin-left: 20%;
 }
 
-.selekt2{
-    display: block;
-    width: 850px;
-    height: 50px;
-    background: #eeeeee;
-    
+.calculator h3{
+    margin-left: 305px;
+    font-size: 25px;
+    padding: 20px 0px 10px 0px;
 }
 
-.selekt3{
-    display: block;
-    width: 850px;
-    height: 50px;
-    background: #eeeeee;
+
+.statistics_container{
+    padding: 60px
 }
 
 .statistics_container h2{
-    border-bottom: 2px solid #d17700;
+    text-align: center;
+    /*border-bottom: 4px solid #d17700;*/
     width: 96px;
     font-size: 22px;
-    margin: 15px auto;
+    margin: 10px auto;
     padding-bottom: 5px;
-    padding-top: 60px;
+}
+
+.statistics_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto;
 }
 
 .statistics{
     float: left;
     width: 230px;
     text-align: center;
-    margin-left:130px;
-    padding-top: 60px;
+    margin-left:100px;
+    padding-top: 90px;
 }
 
 .allstatistics{
-    
+    margin-top: 50px;
     width: 100%;
     height: 50%;
     background: url(../img/fon3.png) center/cover no-repeat;
 }
 
 .reviews h2{
-   border-bottom: 2px solid #d17700;
+   text-align: center;
+    /*border-bottom: 4px solid #d17700;*/
     width: 96px;
-    font-size: 25px;
-    margin: 15px auto;
-    padding-bottom: 10px;
-    padding-top: 60px;    
+    font-size: 22px;
+    margin: 10px auto;
+    padding-bottom: 10px;   
 }
 
-
+.reviews hr{
+   height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 0 auto; 
+}
 
 .reviews{
     text-align: center;
     font-size: 20px;
 }
 
+.review{
+    margin: 60px;
+}
+
+.review p{
+    margin-top: 60px
+}
+
 .contact{
     width: 100%;
     height: 100%;
     background: url(../img/fon4.png) no-repeat;
-    text-align: center
+    text-align: center;
 }
 .contact p{
    color: #ffffff;
@@ -245,7 +311,7 @@ nav{
 }
 
 .contact h2{
-    border-bottom: 2px solid #d17700;
+   /* border-bottom: 4px solid #d17700;*/
     width: 96px;
     font-size: 30px;
     margin: 15px auto;
@@ -254,17 +320,24 @@ nav{
     color: #ffffff  
 }
 
+.contact hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 0 auto;
+}
+
 .contact_item{
-    float: left;
-    width: 230px;
-    text-align: center;
-    margin-left:250px;
+   float: left;
+    width: 250px;
+    margin-left: 200px;
     padding-top: 25px;
 }
 
 .contact p{
     text-align: center;
-    margin: 30px;
+    margin: 25px;
 }
 
 .contact h3{
@@ -274,10 +347,15 @@ nav{
 }
 
 .contacts_inputs{
-   margin: 20px
+   margin: 20px;
+   
 }
 
 .text{
     padding-top: 20px
 }
+
+
+
+
 
