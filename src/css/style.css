@@ -5,7 +5,8 @@ body{
 nav{
     width: 100%;
     height: 60px;
-    background: #344051
+    background: #344051;
+    position: fixed;
 }
 
 .logo{
@@ -14,6 +15,14 @@ nav{
     line-height: 60px;
     padding-left: 250px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
 }
 
 .menu{
@@ -28,11 +37,15 @@ nav{
     margin-right: 20px;
     font-size: 15px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/pg.jpg)  center/cover no-repeat;
 }
 
@@ -41,6 +54,13 @@ nav{
     margin: 300px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .title_container h1{
@@ -107,6 +127,22 @@ nav{
 
 .about_me_container .secondText{
     margin-top: 15px;
+}
+
+
+.download{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    border: 2px solid #6f707e;
+    background: none;
+    border-radius: 5px;
+    color: #6f707e;
+    font-size: 13px;
+    margin: 20px 20px 100px 690px;
+    -webkit-animation: backinleft 1s ease forwards;
+    -o-animation: backinleft 1s ease forwards;
+    animation: backinleft 1s ease forwards;
 }
 
 .skills{
@@ -355,7 +391,104 @@ nav{
     padding-top: 20px
 }
 
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited{
+    color: white;   
+}
+
+.menu li a:hover{
+    color: #11d6c5; 
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+
+.title_container input{
+    transition: all 0,2s;
+    transform: scale(1);
+}
+
+.title_container input:hover{
+    background: #344051;
+    color: white;
+}
+
+.title_container input:active{
+    transform: scale(1.1);
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -60px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
 
 
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
 
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+
+@keyframes backinleft{
+    from{
+        opacity: 0;
+        margin-left: -600px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: 0 auto;
+    }
+    
+}
 
