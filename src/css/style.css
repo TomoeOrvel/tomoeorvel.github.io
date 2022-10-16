@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'FranklinGot';
+    src: url('../fonts/FranklinGothic-Medium.eot');
+    src: url('../fonts/FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FranklinGothic-Medium.woff2') format('woff2'),
+        url('../fonts/FranklinGothic-Medium.woff') format('woff'),
+        url('../fonts/FranklinGothic-Medium.ttf') format('truetype'),
+        url('../fonts/FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('../fonts/Bahnschrift.eot');
+    src: url('../fonts/Bahnschrift.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bahnschrift.woff2') format('woff2'),
+        url('../fonts/Bahnschrift.woff') format('woff'),
+        url('../fonts/Bahnschrift.ttf') format('truetype'),
+        url('../fonts/Bahnschrift.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.eot');
+    src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Calibri.woff2') format('woff2'),
+        url('../fonts/Calibri.woff') format('woff'),
+        url('../fonts/Calibri.ttf') format('truetype'),
+        url('../fonts/Calibri.svg#Calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -7,17 +43,18 @@ nav{
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 1;
 }
 
 .logo{
     color: #fff;
     font-size: 25px;
     line-height: 60px;
-    padding-left: 250px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
+    font-family: 'FranklinGot';
 }
 
 main{
@@ -27,20 +64,20 @@ main{
 
 .menu{
     float: left;
-    padding-left: 355px;
 }
 
 .menu li{
     float: left;
     line-height: 60px;
     color: #fff;
-    margin-right: 20px;
-    font-size: 15px;
+    margin-left: 20px;
+    font-size: 14px;
     text-transform: uppercase;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
     animation: topshift 0.4s ease forwards;
     opacity: 0;
+    font-family: 'FranklinGot';
 }
 
 .main{
@@ -51,9 +88,9 @@ main{
 
 .title_container{
     float: left;
-    margin: 300px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    width: 130%;
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
@@ -64,14 +101,16 @@ main{
 }
 
 .title_container h1{
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
 }
 
 .title_container h4{
     margin-top: 40px;
     font-size: 20px;
-    color: #79818d
+    color: #79818d;
+    font-family: 'FranklinGot';
 }
 
 .title_container input{
@@ -84,19 +123,14 @@ main{
     color: #6d7682;
     font-size: 13px;
     margin: 50px 14px 0px 14px;
+    font-family: 'FranklinGot';
 }
 
 .about_me_container h2{
-    text-align: center;
-    /*border-bottom: 3px solid #d17700;*/
-    width: 96px;
-    font-size: 20px;
-    margin: 15px auto;
-    padding-bottom: 5px;
-}
-
-.about_me_container{
-    text-align: center;
+    font-size: 25px;
+    margin: 50px 0 30px;
+    font-family: 'FranklinGot';
+    text-transform: uppercase;
 }
 
 .about_me_container hr{
@@ -105,13 +139,7 @@ main{
     background: #d17700;
     width: 60px;
     margin: 0 auto;
-    
-}
-
-.about_me_container{
-    text-align: none;
-    width: 740px;
-    margin: 0px auto;
+    opacity: 1;
 }
 
 .about_me_container img{
@@ -120,41 +148,48 @@ main{
     padding: 40px;
 }
 
-
-.about_me_container p{
-    margin-top: 30px;
-} 
-
-.about_me_container .secondText{
-    margin-top: 15px;
+.about_me_container{
+    padding-bottom: 100px;
 }
 
+.about_me_container p{
+    font-family: 'Calibri';
+    font-size: 20px;
+} 
 
-.download{
-    width: 150px;
-    height: 20px;
+.about_me_container a{
+    display: block;
+    width: 162px;
+    height: 33px;
     text-align: center;
-    border: 2px solid #6f707e;
-    background: none;
-    border-radius: 5px;
+    font-family: 'FranklinGot';
+    border: 3px solid #6f707e;
+    border-radius: 8px;
+    line-height: 30px;
+    margin: 40px auto 0;
+    font-size: 16px;
+    background: url(../img/download.png) 6%/auto no-repeat;
+    padding-left: 18px;
     color: #6f707e;
-    font-size: 13px;
-    margin: 20px 20px 100px 690px;
-    -webkit-animation: backinleft 1s ease forwards;
-    -o-animation: backinleft 1s ease forwards;
-    animation: backinleft 1s ease forwards;
+    text-decoration: none;
 }
 
 .skills{
-    padding-top: 25px;
+    background: url(../img/fon.png) center/cover no-repeat;
+}
+
+.skills_container{
+    padding-top: 100px;
+    padding-bottom: 96px;
 }
 
 .skills h2{
     text-align: center;
-   /* border-bottom: 3px solid #d17700;*/
-    width: 100px;
+    font-family: 'FranklinGot';
+    width: 215px;
     font-size: 25px;
-    margin: 20px auto;
+    margin: 0px auto 30px;
+    text-transform: uppercase;
 }
 
 .skills hr{
@@ -162,73 +197,70 @@ main{
     border: none;
     background: #d17700;
     width: 60px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
+    opacity: 1;
 }
 
-.skills{
-    width: 100%;
-    height: 50%;
-    background: url(../img/fon.png) no-repeat;
-    margin-top: 50px;
-}
-
-.skills_item{
-    float: left;
-    width: 250px;
-    text-align: center;
-    margin-left:100px;
-    padding-top: 100px;
+.skills_item img{
+    margin-bottom: 20px;
+    height: 40px;
 }
 
 .skills_item h3{
+    font-size: 18px;
     color: #cf7600;
-    font-size: 25px;
-    padding: 20px 0px 10px 0px  
+    margin-bottom: 20px;
+    font-family: 'Bahnschrift';
 }
 
-.clear{
-    clear: left;
+.skills_item p{
+    font-size: 16px;
+    font-family: 'Calibri';  
 }
 
-.cases{
-    text-align: center;
-    
-}
 
 .cases h2{
-     text-align: center;
-   /* border-bottom: 3px solid #d17700;*/
-    width: 100px;
-    font-size: 22px;
-    margin: 10px auto;
+    font-family: 'FranklinGot';
+    font-size: 30px;
+    margin: 70px 0px 10px;
+    text-transform: uppercase;
 }
 
 .cases hr{
     height: 4px;
     border: none;
     background: #d17700;
-    width: 60px;
+    width: 55px;
     margin: 0 auto;
+    opacity: 1;
+    margin-bottom: 40px;
 }
 
-.cases p{
+.cases_container img{
+    margin: 30px 0px 60px 0px;
+}
+
+
+
+
+.cases_container p{
     font-size: 18px;
-    padding: 20px;
-}
-
-.cases1{
-   float: left;
-    width: 230px;
-    margin-left:200px;
+    font-family: 'Calibri';
+    
 }
 
 .cases1 h3{
-    font-size: 18px;
-    padding: 5px 0px;
+    font-size: 25px;
+    font-family: 'FranklinGot';
+    text-transform: uppercase;
+}
+
+.cases1 p{
+    font-family: 'Calibri';
 }
 
 .cases1 input{
-    width: 160px;
+    width: 210px;
     height: 40px;
     text-align: center;
     border: 1px solid #63b5ae;
@@ -236,63 +268,96 @@ main{
     border-radius: 5px;
     color: white;
     font-size: 18px;
-    margin: 20px 1px 0px 1px;
+    font-family: 'Calibri';
+    opacity: 1;
 }
 
-.cases2{
-    float: left;
-    width: 600px;
-    margin-left: 200px;
+.cases2 h4{
+    font-size: 25px;
+    font-family: 'FranklinGot';
+}
+
+.cases2 p{
+    font-family: 'Calibri';
+    font-size: 18px;
+}
+
+.calculator_container{
+    width: 1000px;
+    height: 700px;
+    box-shadow: 0px 1px 7px 1px #888888;
+    margin-top: 50px;
 }
 
 .calculator h2{
-    text-align: center;
-   /* border-bottom: 4px solid #d17700;*/
-    width: 100px;
-    font-size: 22px;
-    margin: 10px auto;
-}
-
-.calculator hr{
-    height: 4px;
-    border: none;
-    background: #d17700;
-    width: 60px;
-    margin: 0 auto;
-}
-
-.calculator_footer{
-    margin-left: 305px;
-    font-size: 20px;
-    padding-top: 50px;    
+    font-family: 'FranklinGot';
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 .mySelekt{
     display: block;
-    width: 850px;
+    width: 900px;
     height: 50px;
     background: #eeeeee;
-    margin-left: 20%;
+    
 }
+
+
 
 .calculator h3{
-    margin-left: 305px;
     font-size: 25px;
-    padding: 20px 0px 10px 0px;
+    font-family: 'FranklinGot';
+    
 }
 
 
+.calculator_footer .text1{
+    font-size: 25px;
+    font-family: 'FranklinGot';
+}
+
+.calculator_footer .text2{
+    font-size: 25px;
+    font-family: 'franklinGot';
+    
+}
+
+.calculator hr{
+    height: 3px;
+    border: none;
+    background: #d2d2d2;
+    width: 99%;
+    
+}
+
+.calculator input{
+    width: 160px;
+    height: 40px;
+    border: 1px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+}
+
 .statistics_container{
-    padding: 60px
+    padding-top: 60px;
+
+}
+
+.allstatistics{
+    margin-top: 60px;
+    background: url(../img/fon3.png) center/cover no-repeat;
 }
 
 .statistics_container h2{
     text-align: center;
-    /*border-bottom: 4px solid #d17700;*/
-    width: 96px;
-    font-size: 22px;
-    margin: 10px auto;
-    padding-bottom: 5px;
+    font-family: 'FranklinGot';
+    width: 300px;
+    font-size: 25px;
+    margin: 0px auto 20px;
+    text-transform: uppercase;
 }
 
 .statistics_container hr{
@@ -300,31 +365,30 @@ main{
     border: none;
     background: #d17700;
     width: 80px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
+    opacity: 1;
 }
 
-.statistics{
-    float: left;
-    width: 230px;
-    text-align: center;
-    margin-left:100px;
-    padding-top: 90px;
+.statistics img{
+    margin-bottom: 20px;
+    height: 40px;
 }
 
-.allstatistics{
-    margin-top: 50px;
-    width: 100%;
-    height: 50%;
-    background: url(../img/fon3.png) center/cover fixed no-repeat;
+.statistics p{
+    font-size: 21px;
+    font-family: 'Calibri';
+}
+
+.statistics h3{
+    font-size: 40px;
+    font-family: 'FranklinGot';
 }
 
 .reviews h2{
-   text-align: center;
-    /*border-bottom: 4px solid #d17700;*/
-    width: 96px;
-    font-size: 22px;
-    margin: 10px auto;
-    padding-bottom: 10px;   
+    font-size: 25px;
+    margin: 50px 0 20px;
+    font-family: 'FranklinGot';
+    text-transform: uppercase;  
 }
 
 .reviews hr{
@@ -332,41 +396,35 @@ main{
     border: none;
     background: #d17700;
     width: 60px;
-    margin: 0 auto; 
+    margin: 0 auto 50px; 
+    opacity: 1;
 }
 
-.reviews{
-    text-align: center;
+.reviews p{
+    margin-top: 40px;
+    font-family: 'Calibri';
     font-size: 20px;
 }
 
-.review{
-    margin: 60px;
-}
-
-.review p{
-    margin-top: 60px
+.reviews h4{
+    padding-top: 40px;
+    font-family: 'FranklinGot';
+    margin-bottom: 80px;
 }
 
 .contact{
-    width: 100%;
-    height: 100%;
-    background: url(../img/fon4.png) no-repeat;
-    text-align: center;
-}
-.contact p{
-   color: #ffffff;
-    font-size: 15px;
+
+    background: url(../img/fon4.jpg) center/cover no-repeat;
 }
 
 .contact h2{
-   /* border-bottom: 4px solid #d17700;*/
-    width: 96px;
-    font-size: 30px;
-    margin: 15px auto;
-    padding-bottom: 10px;
-    padding-top: 60px;  
-    color: #ffffff  
+    text-align: center;
+    font-family: 'FranklinGot';
+    width: 300px;
+    font-size: 25px;
+    margin: 60px auto 20px;
+    text-transform: uppercase; 
+    color: #ffffff;  
 }
 
 .contact hr{
@@ -374,41 +432,79 @@ main{
     border: none;
     background: #d17700;
     width: 60px;
-    margin: 0 auto;
-}
-
-.contact_item{
-   float: left;
-    width: 250px;
-    margin-left: 200px;
-    padding-top: 25px;
+    margin: 0 auto 50px;
+    opacity: 1;
 }
 
 .contact p{
-    text-align: center;
-    margin: 25px;
+   color: #ffffff;
+    font-size: 20px;
+    font-family: 'Calibri';
+}
+
+.contact_item img{
+    height: 25px;
+    margin: 30px 0px 20px 0px;
 }
 
 .contact h3{
     font-size: 30px;
+    font-family: 'FranklinGot';
     color: #ffffff;
-    padding: 30px;
 }
 
-.contacts_inputs{
-   margin: 20px;
-   
+.firstInput{
+    width: 315px;
+    height: 34px;
+    margin-bottom: 15px;
 }
 
-.text{
-    padding-top: 20px
+.secondInput{
+    width: 315px;
+    height: 34px;
+    margin-bottom: 15px;
+    margin-left: 5px;
 }
+
+
+
+.submit{
+    margin-top: 30px;
+    background: none;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 5px
+}
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menu li a{
     transition: all 0.1s;
     color: white;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
 }
 
 .menu li a:visited{
@@ -488,7 +584,7 @@ main{
     
     to{
         opacity: 1;
-        margin-left: 404px;
+        margin-left: 0px;
     }
 }
 
@@ -512,4 +608,42 @@ main{
 .cases1 input:active{
     transform: scale(1.1);
 }
+
+.calculator input:active{
+    transform: scale(1.1);
+}
+
+.submit:active{
+    transform: scale(1.1);
+}
+
+.white-btn:visited{
+    color: white;
+}
+
+@media (max-width:993px){
+    .title_container, .title_container h4, .title_container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .title_container input{
+        border: 2px solid #fff;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4)
+    }
+}
+*/
+
 
