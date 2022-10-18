@@ -283,24 +283,29 @@ main{
 }
 
 .calculator_container{
-    width: 1000px;
-    height: 700px;
+    width: 1080px;
+    height: 650px;
     box-shadow: 0px 1px 7px 1px #888888;
+    max-width: 100%;
+    margin: 0 auto;
     margin-top: 50px;
 }
+
 
 .calculator h2{
     font-family: 'FranklinGot';
     font-size: 30px;
-    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .mySelekt{
     display: block;
-    width: 900px;
+    width: 950px;
     height: 50px;
     background: #eeeeee;
-    
+    max-width: 100%;
+    margin-bottom: 30px;
 }
 
 
@@ -308,38 +313,46 @@ main{
 .calculator h3{
     font-size: 25px;
     font-family: 'FranklinGot';
+    text-transform: uppercase;
+    margin-bottom: 10px;
     
 }
 
 
-.calculator_footer .text1{
-    font-size: 25px;
+
+.days{
+    font-size: 21px;
     font-family: 'FranklinGot';
+    padding-left: 45px;
 }
 
-.calculator_footer .text2{
-    font-size: 25px;
-    font-family: 'franklinGot';
-    
+.amount{
+    font-size: 21px;
+    font-family: 'FranklinGot';
+ 
+}
+
+.calculator input{
+    width: 180px;
+    height: 40px;
+    border: 1px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .calculator hr{
     height: 3px;
     border: none;
-    background: #d2d2d2;
-    width: 99%;
-    
+    background: #9a9292;
+    width: 950px;
+    margin-top: 30px;
+    max-width: 100%;
 }
 
-.calculator input{
-    width: 160px;
-    height: 40px;
-    border: 1px solid #63b5ae;
-    background: #63b5ae;
-    border-radius: 8px;
-    color: white;
-    font-size: 18px;
-}
+
 
 .statistics_container{
     padding-top: 60px;
@@ -413,7 +426,6 @@ main{
 }
 
 .contact{
-
     background: url(../img/fon4.jpg) center/cover no-repeat;
 }
 
@@ -448,25 +460,33 @@ main{
 }
 
 .contact h3{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'FranklinGot';
     color: #ffffff;
+    text-transform: uppercase;
+}
+
+.contacts_inputs input{
+    margin-bottom: 15px;
+    max-width: 100%;
 }
 
 .firstInput{
-    width: 315px;
+    width: 400px;
     height: 34px;
-    margin-bottom: 15px;
 }
 
 .secondInput{
-    width: 315px;
+    width: 400px;
     height: 34px;
-    margin-bottom: 15px;
-    margin-left: 5px;
 }
 
-
+.contacts_inputs textarea{
+    max-width: 100%;
+    width: 800px;
+    resize: none;
+    
+}
 
 .submit{
     margin-top: 30px;
@@ -476,27 +496,8 @@ main{
     height: 40px;
     width: 120px;
     font-size: 20px;
-    border-radius: 5px
+    border-radius: 5px;
 }
-
-
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .menu li a{
@@ -644,6 +645,6 @@ main{
         background: rgba(0,0,0,0.4)
     }
 }
-*/
+
 
 
