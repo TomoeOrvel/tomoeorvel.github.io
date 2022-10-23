@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,17 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
 </head>
 
 <body>
- 
+  <div class="loaderArea">
+        <div class="loader"></div>
+    </div>
   <header>
+     
       <nav>
          <div class="container">
              <div class="row ml-auto">
@@ -151,24 +156,30 @@
            </div></div>
             <select class="mySelekt" name="type" id="typeSite">
                 <option value="1" selected disabled>Выберите пункт</option>
-                <option value="2">Opt1</option>
-                <option value="3">Opt2</option>
+                <option value="2">Caйт-визитка</option>
+                <option value="3">Корпоративный сайт</option>
+                <option value="4">Интернет-магазин</option>
+
             </select>
             <div class="row"><div class="col-12">
             <h3>Дизайн</h3>
             </div></div>
             <select class="mySelekt" name="type" id="typeSite">
                 <option value="1" selected disabled>Выберите пункт</option>
-                <option value="2">Opt1</option>
-                <option value="3">Opt2</option>
+                <option value="2">Шаблонный</option>
+                <option value="3">Уникальный</option>
+                <option value="4">WOW-Дизайн</option>
+
             </select>
             <div class="row"><div class="col-12">
             <h3>Адаптивность</h3>
             </div></div>
             <select class="mySelekt" name="type" id="typeSite">
                 <option value="1" selected disabled>Выберите пункт</option>
-                <option value="2">Opt1</option>
-                <option value="3">Opt2</option>
+                <option value="2">Только ПК</option>
+                <option value="3">Только мобильный сайт</option>
+                <option value="4">ПК + Мобильный</option>
+
             </select>
             <hr>
              </div>
@@ -303,8 +314,12 @@
            
      </div>
       </section>
+      
      </main>
+     
+     <script src="js/jquery-3.6.1.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/calc.js"></script>
  </body>
 
 </html>
