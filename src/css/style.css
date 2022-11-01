@@ -79,6 +79,12 @@ main{
     font-family: 'FranklinGot';
 }
 
+
+
+.menu li a.active{
+    color: #11d6c5;
+}
+
 .main{
     width: 100%;
     height: 100%;
@@ -121,6 +127,10 @@ main{
     font-size: 13px;
     margin: 50px 14px 0px 14px;
     font-family: 'FranklinGot';
+}
+
+.about_me_container{
+    margin-top: 60px;
 }
 
 .about_me_container h2{
@@ -169,6 +179,15 @@ main{
     padding-left: 18px;
     color: #6f707e;
     text-decoration: none;
+}
+
+.element-animation{
+    opacity: 0;
+}
+
+.element-animation.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 .skills{
@@ -235,7 +254,8 @@ main{
 }
 
 .cases_container img{
-    margin: 30px 0px 60px 0px;
+    margin: 0px 0px 0px 60px;
+    
 }
 
 
@@ -245,6 +265,10 @@ main{
     font-size: 18px;
     font-family: 'Calibri';
     
+}
+
+.cases1{
+    padding-left: 15px;
 }
 
 .cases1 h3{
@@ -350,6 +374,19 @@ main{
     max-width: 100%;
 }
 
+.amount .text{
+    margin-left: 45px; 
+}
+
+.text{
+    float: left;
+    
+}
+
+.digit{
+    float:right;
+    margin-right: 40px;
+}
 
 
 .statistics_container{
@@ -357,9 +394,9 @@ main{
 
 }
 
-.allstatistics{
+.statistics{
     margin-top: 60px;
-    background: url(../img/fon3.png) center/cover no-repeat;
+    background: url(../img/fon3.png) center/cover fixed no-repeat;
 }
 
 .statistics_container h2{
@@ -393,6 +430,11 @@ main{
 .statistics h3{
     font-size: 40px;
     font-family: 'FranklinGot';
+}
+
+.fotorama{
+    text-align: center;
+    
 }
 
 .reviews h2{
@@ -470,13 +512,13 @@ main{
 }
 
 .firstInput{
-    width: 400px;
-    height: 34px;
+    width: 398px;
+    height: 38px;
 }
 
 .secondInput{
-    width: 400px;
-    height: 34px;
+    width: 398px;
+    height: 38px;
 }
 
 .contacts_inputs textarea{
@@ -506,9 +548,6 @@ main{
     text-decoration: none;
 }
 
-.menu li a:visited{
-    color: white;   
-}
 
 .menu li a:hover{
     color: #11d6c5; 
@@ -643,6 +682,30 @@ main{
         background: rgba(0,0,0,0.4)
     }
 }
+
+
+.reviews .carousel-control-next-icon{
+   background-color: #d17700; 
+}
+
+.reviews .carousel-control-prev-icon{
+    background-color: #d17700;
+}
+
+
+.reviews .carousel-indicators [data-bs-target]{
+    background-color: #d17700;
+}
+
+.cases .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #129893;
+}
+
+.cases .carousel-indicators [data-bs-target]{
+    background-color: #129893;
+}
+
+
 
 
 
